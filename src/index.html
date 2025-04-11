@@ -19,8 +19,6 @@
       function sendMessage() {
         const userInput = document.getElementById('user-input').value;
         document.getElementById('user-input').value = '';
-        displayMessage(userInput, 'user');
-
         fetch('/api/chat', {
           method: 'POST',
           headers: {
